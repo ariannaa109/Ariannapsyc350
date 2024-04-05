@@ -95,7 +95,7 @@ pairs(~ total_rae + total_spp + total_cafe + Age, data = practice_data, panel=fu
   abline(lm(y~x), col='red') 
   points(x, y, col= groupcolor)})
 
-#m<-lmer(DV ~ age + 1|ID), data=qc2)
+m<-lmer(DV ~ age + 1|ID), data=qc2)
 #m<-lmer(DV ~ age + (1|ID), data=df)
 #m2<-lmer(DV ~dage+cafe+rae+ (1|ID), data =df)
 #anova(m,m2)
